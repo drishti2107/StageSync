@@ -45,23 +45,23 @@ def read_producer_ids():
 
 
 if __name__ == "__main__":
-    # Run ONE at a time: uncomment one block, keep the others commented out.
 
     # 1. CREATE (uses the first existing director and producer)
     d = read_director_ids()[0]
     p = read_producer_ids()[0]
-    print("Inserted rows:", create_production("Test Show", "Play",
-                                              "2026-12-01", "2026-12-31", d, p))
+    print("Inserted rows:", create_production("Test Show", "Play","2026-12-01", "2026-12-31", d, p))
 
     # 2. READ
-    # for r in read_productions():
-    #     print(r)
+    #rows = read_productions()
+    #for r in rows:
+    #   print(r)
+    #print("Rows returned:", len(rows))
 
     # 3. UPDATE (replace 99 with your test production's production_id)
-    # d = read_director_ids()[0]
-    # p = read_producer_ids()[0]
-    # print("Updated rows:", update_production(99, "Test Show (Revised)", "Musical",
-    #                                          "2026-12-05", "2027-01-05", d, p))
+    #d = read_director_ids()[0]
+    #p = read_producer_ids()[0]
+    #print("Updated rows:", update_production(99, "Test Show (Revised)", "Musical",
+    #                                         "2026-12-05", "2027-01-05", d, p))
 
     # 4. DELETE (replace 99 with your test production's production_id)
-    # print("Deleted rows:", delete_production(99))
+    #print("Deleted rows:", delete_production(102))
