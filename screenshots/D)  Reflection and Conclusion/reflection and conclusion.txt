@@ -1,0 +1,19 @@
+Working on StageSync was a good learning experience for me because it
+helped me understand how a database application works beyond just
+writing SQL queries. Initially, connecting PostgreSQL with Python and
+getting the Streamlit interface to communicate with the database was
+challenging. I also had to work through issues with queries, database
+constraints, and making sure that changes made through the interface were
+actually reflected in the database. While implementing the Add, View, 
+Update, and Delete operations, I learned how important it is to validate user
+input and handle database transactions properly. I gained a better understanding 
+of how the frontend, backend, and database depend on each other. I also
+learned the need to use parameterized queries instead of directly
+inserting user input into SQL statements to prevent SQL injection. I
+also understood why database credentials should not be exposed in shared
+files.
+
+Overall, this project helped me become more comfortable working with
+PostgreSQL and Python together, and gave me a better idea of what goes
+into building a functional application that interacts with a real
+database.
